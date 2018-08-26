@@ -1,29 +1,16 @@
 package manb.spring.app.model;
 
-public class Greetings {
+import java.util.List;
 
-	private String from;
-	private String to;
-	private String message;
-	
-	public String getFrom() {
-		return from;
+public class Greetings {
+	private List<Greeting> greetings;
+
+	public List<Greeting> getGreetings() {
+		return greetings;
 	}
-	public void setFrom(String from) {
-		this.from = from;
+
+	public void setGreetings(List<Greeting> greetings) {
+		this.greetings = greetings;
 	}
-	public String getTo() {
-		return to;
-	}
-	public void setTo(String to) {
-		this.to = to;
-	}
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	
-	
+
 }
